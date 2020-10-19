@@ -13,8 +13,14 @@ if [[ -z "$1" ]]; then
 	echo $USAGE
 	exit 1
 fi
-if [[ "$1" = "start" || "$1" = "stop" || "$1" = "deploy" ]]; then
+if [[ "$1" = "start" || "$1" = "stop" ]]; then
 	php $LFC_DIR/linuxforcomposer.phar docker:run $1
+elif [[ "$1" = "deploy" ]]; then
+    mv linuxforcomposer.json linuxforcomposer.json.bak
+    mv do.not.upload.linuxforcomposer.json linuxforcomposer.json
+	php $LFC_DIR/linuxforcomposer.phar docker:run $1
+    mv linuxforcomposer.json do.not.upload.linuxforcomposer.json
+    mv linuxforcomposer.json.bak linuxforcomposer.json
 elif [[ "$1" = "creds" ]]; then
 	php $TOOLS_DIR/generate_creds.php $2 $3 $4 $5 $6
 elif [[ "$1" = "init" ]]; then
