@@ -1,0 +1,61 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "69de3798eac23fb46022f6d08ac642fd",
+    "packages": [
+        {
+            "name": "linuxforphp/linuxforcomposer",
+            "version": "2.0.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/linuxforphp/linuxforcomposer.git",
+                "reference": "271f9f68c41d58573dfc50a13d43871363faa81f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/linuxforphp/linuxforcomposer/zipball/271f9f68c41d58573dfc50a13d43871363faa81f",
+                "reference": "271f9f68c41d58573dfc50a13d43871363faa81f",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2"
+            },
+            "bin": [
+                "bin/linuxforcomposer.phar"
+            ],
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Foreach Code Factory",
+                    "email": "lfphp@asclinux.net"
+                }
+            ],
+            "description": "Composer package that helps to easily configure and run Docker and Linux for PHP containers for any PHP project.",
+            "homepage": "https://linuxforphp.net",
+            "keywords": [
+                "Linux for Composer",
+                "Linux for PHP",
+                "composer",
+                "docker",
+                "php"
+            ],
+            "time": "2020-07-10T21:35:05+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
+}
